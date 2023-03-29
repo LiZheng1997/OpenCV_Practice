@@ -1,6 +1,6 @@
-# dst=cv2.Scharr(src,ddepth,dx,dy[,scale[,delta[,borderType]]]）
+# dst=cv2.Scharr(src,ddepth,dx,dy[,scale[,delta[,borderType]]])
 # 叠加的时候使用的是addWeight加权，gamma也就是最后一个参数通常设置为0
-# 不允许将函数cv2.Scharr(）的参数dx和dy的值同时设置为1。
+# 不允许将函数cv2.Scharr()的参数dx和dy的值同时设置为1。
 # 因此，本例中将这两个参数的值都设置为1后，程序会报错
 # 对比两个算子的方法效果。
 
@@ -29,3 +29,44 @@ cv2.destroyAllWindows()
 # 式中“|左-右|”表示左侧像素值减右侧像素值的结果的绝对值，“|下-上|”表示下方像素值减上方像素值的结果的绝对值。
 # Laplacian算子计算的是二阶近似导数值，可以将它表示为：
 # Laplacian算子=|左-右|+|左-右|+|下-上|+|下-上|
+
+## 
+import cv2
+
+o=cv2.imread('Scharr.bmp',cv2.IMREAD_GRAYSCALE)
+
+Scharrx=cv2.Scharr(o,cv2.CV_64F,1,0)
+
+Scharrx=cv2.convertScaleAbs(Scharrx)
+
+cv2.imshow("original",o)
+
+cv2.imshow("x",Scharrx)
+
+cv2.waitKey()
+
+cv2.destroyAllWindows()
+
+
+#
+import cv2
+
+o=cv2.imread('Sobel4.bmp',cv2.IMREAD_GRAYSCALE)
+
+Scharrx=cv2.Sobel(o,cv2.CV_64F,1,0,-1)
+
+Scharry=cv2.Sobel(o,cv2.CV_64F,0,1,-1)
+
+Scharrx=cv2.convertScaleAbs(Scharrx)
+
+Scharry=cv2.convertScaleAbs(Scharry)
+
+cv2.imshow("original",o)
+
+cv2.imshow("x",Scharrx)
+
+cv2.imshow("y",Scharry)
+
+cv2.waitKey()
+
+cv2.destroyAllWindows()
