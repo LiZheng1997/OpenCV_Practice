@@ -4,11 +4,12 @@
 # @FileName: demo4.py.py
 # @Software: PyCharm
 
+##通过HSV空间对不同的颜色的内容进行提取
 import cv2
 
 import numpy as np
 
-opencv=cv2.imread("opencv.jpg")
+opencv=cv2.imread("../images/opencv-logo.png")
 
 hsv=cv2.cvtColor(opencv,cv2.COLOR_BGR2HSV)
 

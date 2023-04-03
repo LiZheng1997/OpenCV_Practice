@@ -6,7 +6,7 @@
 
 import cv2
 
-img=cv2.imread("lesson2.jpg")
+img=cv2.imread("../images/lesson2.png")
 
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 
@@ -26,7 +26,7 @@ satMask=cv2.inRange(s,minSat,maxSat)
 
 mask=hueMask & satMask
 
-roi=cv2.bitwise_and(img,img,mask=mask)
+roi=cv2.bitwise_and(img,img, mask=mask)
 
 cv2.imshow("img",img)
 

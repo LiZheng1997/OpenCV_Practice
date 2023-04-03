@@ -10,7 +10,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-o=cv2.imread("my.bmp",cv2.IMREAD_UNCHANGED)
+o=cv2.imread("../images/seg.png",cv2.IMREAD_UNCHANGED)
 
 k=np.ones((5,5),np.uint8)
 

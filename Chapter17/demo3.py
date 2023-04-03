@@ -9,7 +9,7 @@ import cv2
 
 import matplotlib.pyplot as plt
 
-o=cv2.imread('lenacolor.png')
+o=cv2.imread('../images/lenacolor.png')
 
 orgb=cv2.cvtColor(o,cv2.COLOR_BGR2RGB)
 
@@ -49,7 +49,7 @@ import cv2
 
 import matplotlib.pyplot as plt
 
-o=cv2.imread('lenacolor.png')
+o=cv2.imread('../images/lenacolor.png')
 
 orgb=cv2.cvtColor(o,cv2.COLOR_BGR2RGB)
 

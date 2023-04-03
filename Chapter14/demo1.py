@@ -9,7 +9,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-img=cv2.imread('image\\boat.bmp',0)
+img=cv2.imread('../images/lena.bmp',0)
 
 f=np.fft.fft2(img)
 

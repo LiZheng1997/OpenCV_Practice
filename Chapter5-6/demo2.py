@@ -4,9 +4,10 @@
 # @FileName: demo2.py.py
 # @Software: PyCharm
 
+## 翻转
 import cv2
 
-img=cv2.imread("lena.bmp")
+img=cv2.imread("../images/lena.bmp")
 
 x=cv2.flip(img,0)
 
@@ -26,7 +27,7 @@ cv2.waitKey()
 
 cv2.destroyAllWindows()
 
-##
+##仿射
 import cv2
 
 import numpy as np
@@ -52,7 +53,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 
-##
+##旋转
 
 img=cv2.imread("../images/lena.bmp")
 
@@ -71,12 +72,12 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 
-##
+##透视
 import cv2
 
 import numpy as np
 
-img=cv2.imread('lena.bmp')
+img=cv2.imread('../images/lena.bmp')
 
 rows,cols,ch=img.shape
 

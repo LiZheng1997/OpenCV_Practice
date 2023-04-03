@@ -5,7 +5,7 @@
 # @Software: PyCharm
 import cv2
 
-o=cv2.imread("lenas.bmp")
+o=cv2.imread("../images/lena.bmp")
 
 r1=cv2.pyrUp(o)
 

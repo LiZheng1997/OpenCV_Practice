@@ -5,7 +5,7 @@
 # @Software: PyCharm
 import cv2
 
-o=cv2.imread('Laplacian.bmp',cv2.IMREAD_GRAYSCALE)
+o=cv2.imread('../images/sobel.png',cv2.IMREAD_GRAYSCALE)
 
 Laplacian=cv2.Laplacian(o,cv2.CV_64F)
 

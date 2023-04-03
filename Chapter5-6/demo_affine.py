@@ -38,7 +38,7 @@ import numpy as np
 # cv2.destroyAllWindows()
 
 #透视
-img=cv2.imread('lena.bmp')
+img=cv2.imread('../images/lena.bmp')
 rows,cols=img.shape[:2]
 print(rows,cols)
 pts1=np.float32([[150,50],[400,50],[60,450],[310,450]])

@@ -8,7 +8,7 @@ import cv2
 
 import numpy as np
 
-o=cv2.imread("gradient.bmp",cv2.IMREAD_UNCHANGED)
+o=cv2.imread("../images/erode.png",cv2.IMREAD_UNCHANGED)
 
 k=np.ones((5,5),np.uint8)
 

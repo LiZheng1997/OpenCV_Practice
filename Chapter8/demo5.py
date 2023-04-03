@@ -7,9 +7,9 @@ import cv2
 
 import numpy as np
 
-o1=cv2.imread("blackhat.bmp",cv2.IMREAD_UNCHANGED)
+o1=cv2.imread("../images/closing.png",cv2.IMREAD_UNCHANGED)
 
-o2=cv2.imread("lena.bmp",cv2.IMREAD_UNCHANGED)
+o2=cv2.imread("../images/lena.bmp",cv2.IMREAD_UNCHANGED)
 
 k=np.ones((5,5),np.uint8)
 

@@ -4,6 +4,7 @@
 # @FileName: demo5.py.py
 # @Software: PyCharm
 
+##阈值处理
 import cv2
 
 import numpy as np

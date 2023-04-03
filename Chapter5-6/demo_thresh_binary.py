@@ -57,7 +57,7 @@ import numpy as np
 # cv2.destroyAllWindows()
 
 
-img=cv2.imread("lena.bmp")
+img=cv2.imread("../images/lena.bmp")
 t,rst=cv2.threshold(img,127,255,cv2.THRESH_TOZERO)
 cv2.imshow("img",img)
 cv2.imshow("rst",rst)

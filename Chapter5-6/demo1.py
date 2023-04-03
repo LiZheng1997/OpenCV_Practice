@@ -24,7 +24,7 @@ print("rst=\n",rst)
 
 
 
-img=cv2.imread("test.bmp")
+img=cv2.imread("../images/lenacolor.png")
 
 rows,cols=img.shape[:2]
 
@@ -38,7 +38,7 @@ print("rst.shape=",rst.shape)
 
 import cv2
 
-img=cv2.imread("test.bmp")
+img=cv2.imread("../images/lenacolor.png")
 
 rst=cv2.resize(img,None,fx=2,fy=0.5)
 

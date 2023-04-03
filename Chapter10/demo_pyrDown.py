@@ -1,7 +1,7 @@
 
 #向下采样
 import cv2
-o=cv2.imread("lena.bmp",cv2.IMREAD_GRAYSCALE)
+o=cv2.imread("../images/lena.bmp",cv2.IMREAD_GRAYSCALE)
 r1=cv2.pyrDown(o)
 r2=cv2.pyrDown(r1)
 r3=cv2.pyrDown(r2)

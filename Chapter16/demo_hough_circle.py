@@ -7,9 +7,9 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-img = cv.imread("circle.jpg",0)
+img = cv.imread("../images/circle.jpg",0)
 
-imgo = cv.imread("circle.jpg",-1)
+imgo = cv.imread("../images/circle.jpg",-1)
 o = cv.cvtColor(imgo, cv.COLOR_BGR2RGB)
 oshow = o.copy()
 img = cv.medianBlur(img,5)

@@ -4,7 +4,7 @@ Created on Tue Jul  9 16:17:15 2019
 
 @author: 14290
 
-This demo is showing an effect of a pixel in a image
+This demo is showing an effect of a pixel in an image
 """
 
 

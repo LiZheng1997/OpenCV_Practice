@@ -3,6 +3,8 @@
 # @Author  : lizheng
 # @FileName: demo6.py.py
 # @Software: PyCharm
+
+##核函数自定义
 import cv2
 
 kernel1=cv2.getStructuringElement(cv2.MORPH_RECT,(5,5))

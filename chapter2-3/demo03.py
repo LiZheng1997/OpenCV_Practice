@@ -18,7 +18,7 @@ cv.imshow("lena",lena)
 r,c = lena.shape
 x = np.zeros((r,c,8),dtype=np.uint8)
 for i in range(8):
-    x[:,:,i]=2**i
+    x[:,:,i]=2**i ##通过创建8位二进制的矩阵提取每个位平面
 r=np.zeros((r,c,8),dtype=np.uint8)
 for i in range(8):
     r[:,:,i]=cv.bitwise_and(lena,x[:,:,i])

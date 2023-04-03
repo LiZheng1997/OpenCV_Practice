@@ -4,6 +4,7 @@
 # @FileName: demo4.py.py
 # @Software: PyCharm
 
+## remap函数的使用方法
 import cv2
 
 import numpy as np
